@@ -1,0 +1,16 @@
+name: Hello Checkout
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  show-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: Show folder contents
+        run: ls -la
