@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@main
+        uses: actions/checkout@test
 
-      - name: Show folder contents main
+      - name: Show folder contents test
         run: ls -la
